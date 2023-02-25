@@ -31,9 +31,9 @@ const TablePopularMarket = ({coins}: TablePopularMarketProp) => (
                 coins.map((coin) => (
                   <tr key={coin.id} className="">
                     <th scope="row" className="flex items-center py-2.5 font-medium text-tertiary space-x-2">
-                      <div className="w-6 h-6">{coin.icon}</div>
+                      <div className="w-6 h-6 flex-shrink-0">{coin.icon}</div>
                       <p className="font-bold text-primary">{coin.abbreviation}</p>
-                      <p>{coin.name}</p>
+                      <p className="line-clamp-1">{coin.name}</p>
                     </th>
                     <td className="py-2.5 pl-6 text-primary font-semibold">
                         ${coin.lastPrice}

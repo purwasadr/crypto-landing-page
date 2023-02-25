@@ -6,7 +6,7 @@ import Sidebar from "./Sidebar";
 
 export default function Navbar() {
   return (
-    <nav className="flex w-full items-center bg-white px-4 py-3">
+    <nav className="flex w-full items-center bg-white px-6 py-3">
       {/* Brand name */}
       <h1 className="text-xl font-bold text-emerald-500">WeeWallet</h1>
       {/* Container nav items */}
@@ -26,8 +26,8 @@ export default function Navbar() {
         </ul>
         <div className="flex space-x-3">
           <div className="flex space-x-4">
-            <Button variant="text">Sign In</Button>
-            <Button variant="fill">Get Started</Button>
+            <a href="https://rroll.to/iHgSMg"><Button variant="text">Sign In</Button></a>
+            <a href="https://rroll.to/iHgSMg"><Button variant="fill">Get Started</Button></a>
           </div>
           <div className="flex items-center space-x-3">
             <div className="cursor-pointer rounded-md bg-gray-100 p-1.5">

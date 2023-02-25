@@ -3,7 +3,7 @@ import { statsCompany } from "@/constant";
 const Stats = () => {
   return (
     <section className="flex w-full justify-center bg-green-50">
-      <div className="w-full max-w-7xl py-10 md:flex md:py-16 section-padding-x">
+      <div className="w-full max-w-7xl md:flex section-padding-x section-padding-y">
         <ul className="flex w-full list-none flex-col flex-wrap gap-x-10 gap-y-10 sm:flex-row sm:justify-between">
           {statsCompany.map((stat) => (
             <li className="flex flex-col" key={stat.id}>

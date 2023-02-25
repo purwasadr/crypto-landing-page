@@ -166,12 +166,82 @@ const popularMarkets: PopularMarkets[] = [
   {
     id: "market_2",
     categoryName: "New Coin",
-    coins: [],
+    coins: [
+      
+      {
+        id: "coin_1",
+        name: "Binance Coin",
+        abbreviation: "BNB",
+        aDayChange: {
+          value: "+1.56%",
+          isPositive: true,
+        },
+        lastPrice: 305.12,
+        icon: <BinanceSvg />,
+      },
+      {
+        id: "coin_2",
+        name: "Solana",
+        abbreviation: "SOL",
+        aDayChange: {
+          value: "-2.45%",
+          isPositive: false,
+        },
+        lastPrice: 204.67,
+        icon: <SolanaSvg />,
+      },
+      {
+        id: "coin_3",
+        name: "Litecoin",
+        abbreviation: "LTC",
+        aDayChange: {
+          value: "-4.33%",
+          isPositive: false,
+        },
+        lastPrice: 769.45,
+        icon: <LitecoinSvg />,
+      },
+    ],
   },
   {
     id: "market_3",
     categoryName: "Top Gainers",
-    coins: [],
+    coins: [
+      {
+        id: "coin_1",
+        name: "Solana",
+        abbreviation: "SOL",
+        aDayChange: {
+          value: "-2.45%",
+          isPositive: false,
+        },
+        lastPrice: 204.67,
+        icon: <SolanaSvg />,
+      },
+      {
+        id: "coin_2",
+        name: "Bitcoin",
+        abbreviation: "BTC",
+        aDayChange: {
+          value: "-3.23%",
+          isPositive: false,
+        },
+        lastPrice: 16834.56,
+        icon: <BitcoinSvg />,
+      },
+      {
+        id: "coin_3",
+        name: "Ethereum",
+        abbreviation: "ETC",
+        aDayChange: {
+          value: "+4.26%",
+          isPositive: true,
+        },
+        lastPrice: 1267.23,
+        icon: <EthereumSvg />,
+      },
+      
+    ],
   },
 ];
 
