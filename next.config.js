@@ -1,7 +1,33 @@
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+const nextConfigDevServer = {
+  
+}
+
+/** @type {import('next').NextConfig} */
+const nextConfigElse = {
   assetPrefix: './',
 }
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfigCommon = {
+  images: {
+    unoptimized: true,
+  },
+  reactStrictMode: true,
+}
+
+module.exports = (phase, { defaultConfig }) => {
+  if (phase === PHASE_DEVELOPMENT_SERVER) {
+    return {
+      ...nextConfigDevServer,
+      ...nextConfigCommon
+    }
+  }
+
+  return {
+    ...nextConfigElse,
+    ...nextConfigCommon
+  }
+}
